@@ -1,5 +1,10 @@
+* {
+  margin: 0; }
+
 body {
-  font: 100% Helvetica, sans-serif;
-  color: #333; }
+  height: 100vh;
+  background: url("space-bg.png") no-repeat left;
+  background-color: #061632;
+  background-size: auto 100%; }
 
 /*# sourceMappingURL=style.css.map */
