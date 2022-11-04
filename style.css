@@ -1,10 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
 * {
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
 
 body {
   height: 100vh;
-  background: url("space-bg.png") no-repeat left;
+  background: url("space-bg.png") left;
   background-color: #061632;
-  background-size: auto 100%; }
+  background-size: auto 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: monospace; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; }
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin: 100px 0; }
+
+.title {
+  font-family: "DM Sans";
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic; }
+
+.form-container {
+  color: rgba(197, 139, 217, 0.6);
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+  width: 700px;
+  background: #0c162d;
+  padding: 30px;
+  font-size: 1.1rem; }
+  .form-container p:first-child {
+    padding-bottom: 50px; }
+  .form-container .input-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px; }
+    .form-container .input-container label {
+      font-size: 1rem;
+      color: #00cfc8;
+      font-weight: bold; }
+      .form-container .input-container label span {
+        color: #9e387f; }
+    .form-container .input-container input {
+      margin-top: 10px;
+      background: inherit;
+      border: none;
+      color: white;
+      caret-color: white;
+      font-size: 1rem;
+      font-family: inherit;
+      padding: 3px 5px; }
+      .form-container .input-container input:focus-visible {
+        outline: 1px solid rgba(197, 139, 217, 0.6);
+        outline: none; }
+      .form-container .input-container input::placeholder {
+        color: rgba(197, 139, 217, 0.6); }
+      .form-container .input-container input:invalid {
+        color: #9e387f; }
+      .form-container .input-container input:valid {
+        color: #2da44e; }
+  .form-container button {
+    border: 1px solid #2da44e;
+    color: #2da44e;
+    background: inherit;
+    font-size: 1rem;
+    padding: 5px 10px;
+    font-weight: 400;
+    border-radius: 5px; }
+    .form-container button:hover {
+      cursor: pointer; }
+    .form-container button:focus-visible {
+      outline: 1px solid #2da44e;
+      font-weight: bold; }
+
+.sign-in {
+  font-style: normal;
+  font-family: "DM Sans";
+  font-size: 1.2rem; }
+  .sign-in a {
+    color: #2da44e; }
+
+.psw-message {
+  font-size: .8rem;
+  color: #9e387f;
+  margin: 5px;
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
